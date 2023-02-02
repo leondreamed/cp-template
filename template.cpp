@@ -67,6 +67,9 @@ template<typename T,typename ...S>constexpr const inline T& _min(const T& m, con
 #define amax(a, b) (a = max(a, b))
 #define amin(a, b) (a = min(a, b))
 
+#define it_all(v) v.begin(), v.end()
+#define pb push_back
+
 _int main() {
 
 }
