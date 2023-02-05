@@ -18,6 +18,10 @@ typedef vector<int> vi;
 typedef vector<double> vd;
 typedef vector<pii> vii;
 typedef vector<pdd> vdd;
+typedef map<int, int> mii;
+typedef map<double, double> mdd;
+typedef set<int> si;
+typedef set<double> sd;
 
 // lg = log base 2
 template<typename T>constexpr inline T lg(T x){return sizeof(T)*8-(sizeof(T)>4?__builtin_clzll(x):__builtin_clz(x))-is_signed<T>::value;}
@@ -54,6 +58,7 @@ template <typename T, typename ...S>void scan(T& m, S&...s) {scan(m); scan(s...)
 
 // Add an overload for outputting `pair`s
 template<typename T1, typename T2>ostream& operator<<(ostream &output, const pair<T1, T2> &p) {output << '(' << p.first << "," << p.second << ')';return output;}
+template<typename T>ostream& operator<<(ostream& os, const vector<T>& v){ os << "["; for (typename std::vector<T>::const_iterator ii = v.begin(); ii != v.end(); ++ii) { os << " " << *ii; } os << "]";return os;}
 
 // Overriding `min` and `max` to support multiple arguments
 template<typename T> constexpr const inline T& _max(const T& x, const T& y) {return x<y?y:x;}
@@ -70,6 +75,6 @@ template<typename T,typename ...S>constexpr const inline T& _min(const T& m, con
 #define it_all(v) v.begin(), v.end()
 #define pb push_back
 
-_int main() {
-
+_int main()
+{
 }
